@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Denis Novik</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.header__burger').click(function(event) {
+					$('.header__burger, .header__menu').toggleClass('active');
+					$('body').toggleClass('lock');
+				});
+				$('.header__menu').click(function(event) {
+					$('.header__burger, .header__menu').removeClass('active');
+					$('body').removeClass('lock');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header-body">
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li><a href="" class="header__link active">Home</a></li>
+								<li><a href="#about" class="header__link">About me</a></li>
+								<li><a href="#skills" class="header__link">Skills</a></li>
+								<li><a href="#portfolio" class="header__link">Portfolio</a></li>
+								<li><a href="#contacts" class="header__link">Contacts</a></li>
+							</ul>
+							<div class="menu-lang">
+								<a href="" class="menu-lang__item">Ru </a>
+								<a href="" class="menu-lang__item active">| Eng</a> 
+							</div>
+						</nav>
+						<div class="header__burger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="content">
+				<main class="main">
+					<div class="container">
+						<div class="main-top">
+							<div class="main-top-body">
+								<div class="main-top-body__name">Denis<br>Novik</div>
+								<div class="main-top-body__about">UX | UI designer<br>24 years old, Minsk</div>
+								<div class="main-top-body-lang">
+									<div class="main-lang">
+										<a href="" class="main-top-body-lang__item">Ru </a>
+										<a href="" class="main-top-body-lang__item active">| Eng</a> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-bottom">
+							<img src="img/main/main.jpg" alt="" class="main__img">
+							<img src="img/main/main-small.jpg" alt="" class="main-img-small">
+						</div>
+					</div>
+				</main>
+				<section id="about" class="about">
+					<div class="container-about">
+						<h2 class="about__title">About me</h2>
+						<p class="about__text">Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.<br><br>I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.<br><br>Ready to implement excellent projects<br>with wonderful people.</p>
+					</div>
+				</section>
+				<section id="skills" class="skills">
+					<div class="container">
+						<div class="skills-top">
+							<h2 class="skills-top__title">Skills</h2>
+							<p class="skills-top__text">I work in such programs as</p>
+						</div>
+						<div class="skills-bottom">
+							<div class="skills-row">
+								<div class="skills-bottom__column">
+									<div class="skills-bottom-item">
+										<div class="skills-bottom__icon"><img src="img/skills/icons/01.svg" alt=""></div>
+										<div class="skills-bottom__title">Adobe<br>Photoshop</div>
+										<div class="skills-bottom__score"><img src="img/skills/icons/stars/01.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="skills-bottom__column">
+									<div class="skills-bottom-item">
+										<div class="skills-bottom__icon"><img src="img/skills/icons/02.svg" alt=""></div>
+										<div class="skills-bottom__title">Adobe<br>Illustrator</div>
+										<div class="skills-bottom__score"><img src="img/skills/icons/stars/02.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="skills-bottom__column">
+									<div class="skills-bottom-item">
+										<div class="skills-bottom__icon"><img src="img/skills/icons/03.svg" alt=""></div>
+										<div class="skills-bottom__title">Adobe<br>After Effects</div>
+										<div class="skills-bottom__score"><img src="img/skills/icons/stars/01.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="skills-bottom__column">
+									<div class="skills-bottom-item">
+										<div class="skills-bottom__icon"><img src="img/skills/icons/04.svg" alt=""></div>
+										<div class="skills-bottom__title skills-bottom__title--pd">Figma<br></div>
+										<div class="skills-bottom__score "><img src="img/skills/icons/stars/01.svg" alt=""></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="portfolio" class="portfolio">
+					<div class="container">
+						<h2 class="portfolio-title">Portfolio</h2>
+						<div class="portfolio-body">
+							<div class="portfolio-body-item">
+								<div class="portfolio-body__image"><a href=""><img src="img/portfolio/01.jpg" alt=""></a></div>
+								<div class="portfolio-body-subtitle">
+									<a href="" class="portfolio-body-subtitle__link">Online fashion store - Homepage</a>
+								</div>
+							</div>
+							<div class="portfolio-body-item">
+								<div class="portfolio-body__image"><a href=""><img src="img/portfolio/02.jpg" alt=""></a></div>
+								<div class="portfolio-body-subtitle">
+									<a href="" class="portfolio-body-subtitle__link">Reebok Store - Concept</a>
+								</div>
+							</div>
+							<div class="portfolio-body-item">
+								<div class="portfolio-body__image"><a href=""><img src="img/portfolio/03.jpg" alt=""></a></div>
+								<div class="portfolio-body-subtitle">
+									<a href="" class="portfolio-body-subtitle__link portfolio-body-subtitle__link--mb">Braun Landing Page - Concept</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contacts" class="contacts">
+					<div class="contacts-body">
+						<h2 class="contacts-body__title">Contacts</h2>
+						<p class="contacts-body__text">Want to know more or just chat? You are welcome!</p>
+						<a class="contacts-body__btn" href="">Send message</a>
+					</div>
+				</section>
+			</div>
+			<footer class="footer">
+				<div class="footer-row">
+					<div class="footer-top">
+						<div class="footer-socials">
+							<div class="footer-socials-item">
+								<a href="" class="footer-socials__link"><img src="img/contacts/social/01.svg" alt=""></a>
+							</div>
+							<div class="footer-socials-item">
+								<a href="" class="footer-socials__link"><img src="img/contacts/social/02.svg" alt=""></a>
+							</div>
+							<div class="footer-socials-item">
+								<a href="" class="footer-socials__link"><img src="img/contacts/social/03.svg" alt=""></a>
+							</div>
+							<div class="footer-socials-item">
+								<a href="" class="footer-socials__link"><img src="img/contacts/social/04.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p class="footer-bottom__text">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
